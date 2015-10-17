@@ -1,0 +1,11 @@
+<?page title="Inicio" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Inicio" border="normal" width="normal">
+
+	<div align="right">
+		<a label="Registrarse" href="registro.zul"/>	
+		<a label="Iniciar Sesión" href="autenticacion.zul" ></a>	
+	</div>
+	Inicio!
+</window>
+</zk>

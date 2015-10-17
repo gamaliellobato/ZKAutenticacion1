@@ -1,0 +1,67 @@
+<?page contentType="text/html;charset=UTF-8"?>
+
+<zk xmlns:n="native">	
+	<window id="a1"  apply="com.Autenticacion">
+	<n:link rel="stylesheet" href="css/bootstrap.css"></n:link>
+
+     <n:br></n:br>
+     
+    <n:h1 align="center">Secretaria de Ciencia, Tecnología e Inovación.</n:h1>
+    <n:br></n:br>
+    <div class="container">
+    <n:table class="table table-striped" width="600px" cellpadding="15" >
+    	<n:th colspan="3"><n:h3>Datos Personales<n:img src="images/logo-seciti-alta.png" width="200px" heght="200px" align="right"></n:img></n:h3></n:th>
+        <n:tr>
+            <n:td><n:h4>Nombre</n:h4></n:td>
+            <n:td width="70%">
+            	<textbox id="nom" disabled="true"></textbox>           
+            </n:td>
+        </n:tr>
+        
+        <n:tr>
+            <n:td><n:h4>Apellido Paterno</n:h4></n:td>
+            <n:td width="70%">
+                <textbox id="ap" disabled="true"></textbox>
+            </n:td>
+        </n:tr>
+        
+        <n:tr>
+        	<n:td><n:h4>Apellido Materno</n:h4></n:td>
+            <n:td width="70%">
+                <textbox id="am" disabled="true"></textbox>   
+            </n:td>
+        </n:tr>
+        <n:tr>
+        	<n:td><n:h4>Genero</n:h4></n:td>
+            <n:td width="70%">
+                <textbox id="sex" disabled="true"></textbox>  
+            </n:td>
+        </n:tr>
+        <n:tr>
+        	<n:td><n:h4>CURP</n:h4></n:td>
+            <n:td width="70%">
+                <textbox id="cu" disabled="true"></textbox> 
+            </n:td>
+        </n:tr>
+        <n:tr>
+        	<n:td><n:h4>Correo</n:h4></n:td>
+            <n:td width="70%">
+                <textbox id="cor" disabled="true"></textbox> 
+            </n:td>
+        </n:tr>
+        <n:tr>
+        	<n:td><n:h4>Usuario</n:h4></n:td>
+            <n:td width="70%">
+                <textbox id="usu" disabled="true"></textbox>  
+            </n:td>
+        </n:tr>
+        <n:tr>
+        	<n:td><n:h4>Fecha</n:h4></n:td>
+            <n:td width="70%">
+                <textbox id="fecha" disabled="true"></textbox>
+            </n:td>
+        </n:tr>
+    </n:table>
+    </div>
+    </window>
+</zk>

@@ -1,0 +1,135 @@
+<?page title="Registro Sesion" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window id="winlog" title="Registro Sesion" border="normal" apply="com.Autenticacion">
+<style >
+    <!-- .water-mark { 
+       color: gray; font-style: italic; 
+    } -->
+    
+    .form {
+    border: 1px solid #E1E1E1;
+    background: url('C:\Users\Gama\Desktop\logo-gdf-seciti-alta.png');
+    background-size: ;
+    padding: 20px 20px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    float:left;
+    width:450px;
+    height: 450px;
+	}
+    
+    .form .name {
+    display: block;
+    width: 100px;
+    text-align: center;
+    } 
+      
+    .link-Button {
+	border: 0px solid #006;
+	background:transparent;
+	font-family: arial,sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration:underline;
+	text-align:center;     
+	color:#0065CC;
+	padding-left:0px;
+	padding-right:0px;
+	padding-bottom:0px;
+	padding-top:0px;
+	cursor:pointer;  
+	}
+	
+	.center{
+	display: inline-block;
+    margin:0 auto;
+    width:0px;
+    height: 0px;
+    background: #00ff00;
+	}
+	
+	.right{
+    float: right;
+    border: 1px solid #E1E1E1;
+    background: url('C:\Users\Gama\Desktop\logo-gdf-seciti-alta.png');
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px; 
+    position: relative;
+    float:right;
+    width:900px;
+    height:450px;
+    background-image: url("images/logo-seciti-alta.png");
+    background-size:  550px 150px;
+    background-repeat: no-repeat;
+    background-position: center;     
+    }
+    
+    .container{
+     width:100%;
+    text-align:center;
+    }
+    </style>
+    <div class="container">
+	<div width="400px" class="form" align="left">
+		<vlayout spacing="15px">
+			<label value="Registro Sesión" style="font-size:16px;font-weight:bold;color:gray;" />
+			
+			<hlayout spacing="15px">
+				<label class="name" value="ID:"/>
+				<textbox id="id" width="200px" disabled="true"> </textbox>
+			</hlayout>
+			<hlayout spacing="15px">
+				<label class="name" value="Nombre:"/>
+				<textbox id="nombre" width="200px" disabled="true"> </textbox>
+			</hlayout>
+			<hlayout spacing="15px">
+				<label class="name" value="Apellido Paterno:"/>
+				<textbox id="paterno" width="200px" disabled="true"> </textbox>
+			</hlayout>
+			<hlayout spacing="15px">
+				<label class="name" value="Apellido Materno:"/>
+				<textbox id="materno" width="200px" disabled="true"> </textbox>
+			</hlayout>
+			<hlayout spacing="15px">
+				<label class="name" value="Género:" />
+				<textbox id="sexo" width="200px" disabled="true"> </textbox>
+			</hlayout>
+			<hlayout spacing="15px">
+				<label class="name" value="CURP:"/>
+				<textbox id="curp" width="200px" constraint="no empty: Ingresa tu CURP"> </textbox>
+			</hlayout>
+			<hlayout spacing="15px">
+				<label class="name" value="Correo:"/>
+				<textbox id="correo" width="200px" disabled="true"> </textbox>
+			</hlayout>
+			<hlayout spacing="15px">
+				<label class="name" value="Usuario:"/>
+				<textbox id="usuario" width="200px" constraint="no empty: Ingresa un Usuario"> </textbox>
+			</hlayout>
+			
+			<hlayout spacing="15px">
+				<button id="bActualizar" class="name" label="Actualizar"></button>
+				
+				<button id="bLink" zclass="link-Button" label=""></button>
+			</hlayout>
+				
+			<hlayout spacing="15px">
+				<button id="bSalir" class="name" label="Salir"></button>
+			</hlayout>
+			
+			
+		</vlayout>
+		
+	</div>
+	<div class="center"></div>
+	<div class="right" >
+			<hlayout>
+				<iframe height="450px" width="900px" id="reportframe"></iframe>
+			</hlayout>
+	</div>
+	
+	</div>
+</window>
+</zk>

@@ -1,0 +1,22 @@
+<?page title="Registro Sesion" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window id="vie" title="Registro Sesion" border="normal" apply="com.Autenticacion">
+New Content Here!
+
+ 
+            	<textbox id="nom" disabled="true"/>           
+            
+                <textbox id="ap" disabled="true"/>
+            
+                <textbox id="am" disabled="true"/>   
+            
+                <textbox id="sex" disabled="true"/>  
+           
+                <textbox id="cu" disabled="true"/> 
+            
+                <textbox id="cor" disabled="true"/> 
+            
+                <textbox id="usu" disabled="true"/>  
+            
+</window>
+</zk>

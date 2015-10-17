@@ -1,0 +1,40 @@
+<?page title="Autenticacion" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Autenticacion" border="normal" apply="com.Autenticacion">
+<style>
+    
+    .form {
+        border: 1px solid #E1E1E1;
+        padding: 20px 20px;
+        -webkit-border-radius:4px;
+        -moz-border-radius:4px;
+        border-radius:4px;
+    }
+    .form .name {
+        display: block;
+        width: 100px;
+        text-align: center;
+    } 
+    </style>
+	<div width="500px" class="form">
+		<vlayout spacing="15px">
+			<label value="Autenticación" style="font-size:16px;font-weight:bold;color:gray;" />
+			<hlayout spacing="15px">
+				<label class="name" value="Correo:"/>
+				<textbox id="correo" width="200px" constraint="no empty"> </textbox>
+			</hlayout>
+			<hlayout spacing="15px">
+				<label class="name" value="Password:"/>
+				<textbox id="password" type="password" width="200px" constraint="no empty"></textbox>
+			</hlayout>
+			
+			<hlayout spacing="15px">
+				<button id="bEntrar" class="name" label="Entrar"></button>
+			</hlayout>
+			<hlayout spacing="15px">
+				<button id="bCancelar" class="name" label="Cancelar"></button>
+			</hlayout>
+		</vlayout>
+	</div>
+</window>
+</zk>

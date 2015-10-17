@@ -1,0 +1,67 @@
+<?page title="Registro" contentType="text/html;charset=UTF-8"?>
+<window title="Autenticacion" border="normal" width="normal" apply="com.Registro">
+
+<style>
+    <!-- .water-mark { 
+       color: gray; font-style: italic; 
+    } -->
+    .form {
+        border: 1px solid #E1E1E1;
+        background: url('/ZKAutenticacion/WebContent/images/logo-gdf-seciti-alta.png');
+        background-size: ;
+        padding: 20px 20px;
+        -webkit-border-radius:4px;
+        -moz-border-radius:4px;
+        border-radius:4px;
+    }
+    .form .name {
+        display: block;
+        width: 100px;
+        text-align: center;
+    } 
+    </style>
+	<div width="400px" class="form">
+	
+		<vlayout spacing="15px">
+			<label value="Pre-registro" style="font-size:16px;font-weight:bold;color:gray;" />
+			<hlayout spacing="15px">
+				<label class="name" value="Nombre:"/>
+				<textbox id="nombre" width="200px" constraint="no empty"> </textbox>
+			</hlayout>
+			<hlayout spacing="15px">
+				<label class="name" value="Apellido Paterno:"/>
+				<textbox id="paterno" width="200px" constraint="no empty"> </textbox>
+			</hlayout>
+			<hlayout spacing="15px">
+				<label class="name" value="Apellido Materno:"/>
+				<textbox id="materno" width="200px" constraint="no empty"> </textbox>
+			</hlayout>
+			<hlayout spacing="15px">
+				<label class="name" value="Género:" />				
+				<radiogroup id="sexo" width="200px" > 
+					<radio label="Hombre" value="hombre"/>
+					<radio label="Mujer" Value="mujer"/>
+				</radiogroup>
+			</hlayout>
+			<hlayout spacing="15px">
+				<label class="name" value="Correo:"/>
+				<textbox id="correo" width="200px" constraint="no empty,/.+@.+\.[a-z]+/: Ingresa tu correo"> </textbox>
+			</hlayout>
+			<hlayout spacing="15px">
+				<label class="name" value="Usuario:"/>
+				<textbox id="usuario" width="200px" constraint="no empty"> </textbox>
+			</hlayout>
+			<hlayout spacing="15px">
+				<label class="name" value="Password:"/>
+				<textbox id="password" type="password" width="200px" constraint="no empty"> </textbox>
+			</hlayout>
+			
+			<hlayout spacing="15px">
+				<button id="bregistrar" class="name" label="Registrar" ></button>
+			</hlayout>
+		</vlayout>
+	</div>
+	
+
+
+</window>
